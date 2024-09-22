@@ -30,7 +30,7 @@ namespace WindowsBaselineAssistant
         string fortifyCmd = $"secedit /configure /db {Util.RoamingDirectory}fortify.sdb /cfg {Util.RoamingDirectory}fortify.cfg";
         string openRegCmd = "regjump.exe {0} /accepteula";
         string suggestTip = string.Empty;
-        readonly string fortifyTip = "在进行加固前，我们需要确认您已知晓该操作对您设备关键性位置进行更改的风险.\n\n" +
+        readonly string fortifyTip = "设备关键性位置进行更改的风险.\n\n" +
             "是否了解该操作的风险?";
 
         private void SetPassStyle(int index)
